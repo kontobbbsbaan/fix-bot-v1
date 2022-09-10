@@ -112,7 +112,7 @@ global.wm2 = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘ MODZ BOTZ ˘ฅ ꒱ ‧₊˚꒷�
 global.wm3 = '⫹⫺ MODZ BOTZ '
 global.botdate = `⫹⫺ DATE: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `T I M E : ${wktuwib}`
-global.titlebot = `⫹⫺ WhatsApp Bot | By WH-KIAN`
+global.titlebot = `⫹⫺ WhatsApp Bot | By KIAN`
 global.author = '                「 MODZ BOTZ 」'
 
 
