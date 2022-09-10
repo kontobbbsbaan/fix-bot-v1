@@ -255,10 +255,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 ]
 
 let usrs = db.data.users[m.sender]
-let tek = `\n`
-const listMessage = {
-  text: tek,
-  footer: '*${ucapan()} ${conn.getName(m.sender)}*
+let tek = `*${ucapan()} ${conn.getName(m.sender)}*
 ┌–––––––––––––––––✥
 │「 Hai Kak👋 」
 └┬❖ 「 ${conn.getName(m.sender)} 」
@@ -281,10 +278,12 @@ const listMessage = {
 ┊↬✗• *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
 ┗––––––––––––––––––✥
 ┊↬✗• *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
-${clockStringP(usrs.premiumTime - new Date())}` : ''}',
+${clockStringP(usrs.premiumTime - new Date())}` : ''}`
+const listMessage = {
+  text: tek,
   mentions: await conn.parseMention(tek),
   title: `${htki} *LIST MENU* ${htka}`,
-  buttonText: `CLICK HERE ⎙`, 
+  buttonText: `CLICK DISINI`, 
   sections
 }
   if (teks == '404') {
