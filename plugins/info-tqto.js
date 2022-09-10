@@ -1,9 +1,9 @@
 import fetch from 'node-fetch'
 
 let handler = async (m) => {
-    let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
-    //let wibu = `https://api.zacros.my.id/randomimg/loli`
-    let res = await fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/anime/neko.txt')
+    let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/385cfe85ba26deda1726d.jpg')
+    //let wibu = `https://telegra.ph/file/385cfe85ba26deda1726d.jpg`
+    let res = await fetch('https://chat.whatsapp.com/FvDujLzzrQsGaJaRLVZ0Fg')
     let txt = await res.text()
     let arr = txt.split('\n')
     let cita = arr[Math.floor(Math.random() * arr.length)]
@@ -53,7 +53,6 @@ https://github.com/Rlxfly
 https://github.com/Aiinne
 *❉ Papah-Chan:*
 https://github.com/FahriAdison
-*▸ - - - —「 Penulis Ulang 」— - - - ◂*
 *❉ ImYanXiao:*
 https://github.com/ImYanXiao
 *▸ - - - —「 Thanks For Suhu 」— - - - ◂*
@@ -66,10 +65,10 @@ https://github.com/ImYanXiao
 
 `
 conn.sendButtonDoc(m.chat, tqto, wm,'Thanks','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: "https://Instagram.com/_ctzhid",
+    mediaUrl: "https://chat.whatsapp.com/FvDujLzzrQsGaJaRLVZ0Fg",
     mediaType: "VIDEO",
-    description: "https://Instagram.com/_ctzhid", 
-    title: 'WH-MODS-DEV-MultiDevice',
+    description: "https://chat.whatsapp.com/FvDujLzzrQsGaJaRLVZ0Fg", 
+    title: 'MODZ BOTZ MULTI DEVICE',
     body: wm,
     thumbnail: thumb,
     sourceUrl: sgc
