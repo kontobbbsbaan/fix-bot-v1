@@ -117,11 +117,11 @@ global.author = '                「 MODZ BOTZ 」'
 
 
 /*============== LOGO ==============*/
-global.thumb = 'https://i.ibb.co/XZrK6yQ/transformers.jpg' //Main Thumbnail
-global.imagebot = 'https://i.ibb.co/XZrK6yQ/transformers.jpg'
+global.thumb = 'https://telegra.ph/file/385cfe85ba26deda1726d.jpg' //Main Thumbnail
+global.imagebot = 'https://telegra.ph/file/385cfe85ba26deda1726d.jpg'
 global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
-global.thumbs = ['https://i.ibb.co/XZrK6yQ/transformers.jpg']
-global.fla = 'https://i.ibb.co/XZrK6yQ/transformers.jpg'
+global.thumbs = ['https://telegra.ph/file/385cfe85ba26deda1726d.jpg']
+global.fla = 'https://telegra.ph/file/385cfe85ba26deda1726d.jpg'
 global.flaaa2 = [
 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
 'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&text=',
@@ -157,7 +157,7 @@ global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.shee
 global.dpdf = 'application/pdf'
 global.drtf = 'text/rtf'
 
-global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
+global.thumbdoc = 'https://telegra.ph/file/385cfe85ba26deda1726d.jpg'
 
 /*=========== FAKE SIZE ===========*/
 global.fsizedoc = '999999999999' // default 10TB
@@ -165,10 +165,10 @@ global.fpagedoc = '999999'
 
 /*=========== HIASAN ===========*/
 // DEFAULT MENU
-global.dmenut = 'ଓ═┅═━–〈' //top
-global.dmenub = '┊↬' //body
-global.dmenub2 = '┊' //body for info cmd on Default menu
-global.dmenuf = '┗––––––––––✦' //footer
+global.dmenut = '╔═┅═━–✘' //top
+global.dmenub = '║↬' //body
+global.dmenub2 = '║' //body for info cmd on Default menu
+global.dmenuf = '╚––––––––––✘' //footer
 
 // COMMAND MENU
 global.dashmenu = '┅═┅═❏ *DASHBOARD* ❏═┅═┅'
@@ -187,8 +187,8 @@ global.htjava = '⫹⫺'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
-global.stickpack = 'WH-MODS-BOT-V1'
-global.stickauth = `By ©WH-MODS-DEV`
+global.stickpack = '🌷𝚍𝚒 𝚋𝚞𝚊𝚝 𝚘𝚕𝚎𝚑 𝚋𝚘𝚝'
+global.stickauth = `By ©𝚖𝚘𝚍𝚣𝚋𝚘𝚝𝚣`
 
 global.multiplier = 38 // The higher, The harder levelup
 
