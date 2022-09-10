@@ -216,48 +216,40 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
     let mpt = clockString(_mpt)
       const sections = [
    {
-	title: `${htki} MAIN ${htka}`,
+	title: `𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐 `,
 	rows: [
-	    {title: `⚡ ${pmenus} SPEED BOT`, rowId: ".speed", description: "Menampilkan kecepatan respon BOT"},
-	    {title: `💌 ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
-	    {title: `📔 ${pmenus} SCRIPT BOT`, rowId: ".sc", description: `Source Code ${namebot}`},
-	]
-    },{
-	title: `${htki} SUPPORT ${htka}`,
-	rows: [
-	    {title: `🔖 ${pmenus} SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
-	    {title: `🌟 ${pmenus} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
-	    {title: `💹 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
-	]
-	},{
-	title: `${htki} MENU ${htka}`,
-	rows: [
-	    {title: `💬 ${pmenus} All`, rowId: ".? all", description: "Menampilkan Semua command BOT"},
-	    {title: `🌱 ${pmenus} Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
-	{title: `✨ ${pmenus} Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
-	{title: `🎮 ${pmenus} Game`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
-	{title: `🧩 ${pmenus} Fun`, rowId: ".? fun", description: "Fitur yang aman untuk keluarga"},
-	{title: `🐚 ${pmenus} Kerang`, rowId: ".? kerangajaib", description: "Tanyakan pada ketua club"},
-	{title: `📑 ${pmenus} Quotes`, rowId: ".? quotes", description: "Random Inspirasi"},
-	{title: `⛩️ ${pmenus} Anime`, rowId: ".? anime", description: "Kamu wibu ya bang?"},
-	{title: `🔞 ${pmenus} Nsfw`, rowId: ".? nsfw", description: "Tch, dasar sagne"},
-	{title: `🌟 ${pmenus} Premium`, rowId: ".? premium", description: "Only premium Users"},
-	{title: `🎭 ${pmenus} Anonymous Chats`, rowId: ".? anonymous", description: "Bicara dengan orang tidak dikenal"},
-	{title: `📖 ${pmenus} Al-Quran`, rowId: ".? quran", description: "Tobat yuk kak"},
-	{title: `🌎 ${pmenus} Internet`, rowId: ".? internet", description: "Cari sesuatu diBOT"},
-  {title: `🌎 ${pmenus} Berita`, rowId: ".? berita", description: "Cari berita terupdate"},
-	{title: `📩 ${pmenus} Downloaders`, rowId: ".? downloader", description: "Download sesuatu diBOT"},
-	{title: `🎨 ${pmenus} Stikers`, rowId: ".? stiker", description: "Buat Sticker diBOT"},
-	{title: `✏️ ${pmenus} Nulis`, rowId: ".? nulis", description: "Nulis kok males kak?"},
-	{title: `🎧 ${pmenus} Audio`, rowId: ".? audio", description: "Ubah Audio dengan Filter"},
-  {title: `🎧 ${pmenus} Sound Menu`, rowId: ".soundmenu", description: "Kumpulan 120 Sound"},
-	{title: `🏢 ${pmenus} Group`, rowId: ".? group", description: "Only Groups"},
-	{title: `👑 ${pmenus} Admin`, rowId: ".? admin", description: "Only Admin Group"},
-	{title: `🗂️ ${pmenus} Database`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
-	{title: `🛠️ ${pmenus} Tools`, rowId: ".? tools", description: "Mungkin tools ini bisa membantu?"},
-	{title: `ℹ️ ${pmenus} Info`, rowId: ".? info", description: "Info info BOT"},
-	{title: `👩‍💻 ${pmenus} Owner`, rowId: ".? owner", description: "Owner Only!"},
-	{title: `❓ ${pmenus} No Category`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
+	    {title: `⚡ ${pmenus} 𝚜𝚙𝚎𝚎𝚍 𝚋𝚘𝚝`, rowId: ".speed", description: "Menampilkan kecepatan respon BOT"},
+	    {title: `💌 ${pmenus} 𝚘𝚠𝚗𝚎𝚛 𝚋𝚘𝚝`, rowId: ".owner", description: "Menampilkan List owner BOT"},
+	    {title: `📔 ${pmenus} 𝚜𝚌𝚛𝚒𝚙𝚝 𝚋𝚘𝚝`, rowId: ".sc", description: `Source Code ${namebot}`},
+	    {title: `🔖 ${pmenus} 𝚜𝚎𝚠𝚊`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
+	    {title: `🌟 ${pmenus} 𝚋𝚞𝚢 𝚙𝚛𝚎𝚖𝚒𝚞𝚖`, rowId: ".premium", description: "Menampilkan list harga premium"},
+	    {title: `💹 ${pmenus} 𝚍𝚘𝚗𝚊𝚜𝚒`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
+	    {title: `💬 ${pmenus} 𝙰𝙻𝙻`, rowId: ".? all", description: "Menampilkan Semua command BOT"},
+	    {title: `🌱 ${pmenus} 𝚁𝙿𝙶`, rowId: ".? rpg", description: "Game Epic Rpg!"},
+	{title: `✨ ${pmenus} 𝙴𝚇𝙿`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
+	{title: `🎮 ${pmenus} 𝙶𝙰𝙼𝙴`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
+	{title: `🧩 ${pmenus} 𝙵𝚄𝙽`, rowId: ".? fun", description: "Fitur yang aman untuk keluarga"},
+	{title: `🐚 ${pmenus} 𝙺𝙴𝚁𝙰𝙽𝙶`, rowId: ".? kerangajaib", description: "Tanyakan pada ketua club"},
+	{title: `📑 ${pmenus} 𝚀𝚄𝙾𝚃𝙴𝚂`, rowId: ".? quotes", description: "Random Inspirasi"},
+	{title: `⛩️ ${pmenus} 𝙰𝙽𝙸𝙼𝙴`, rowId: ".? anime", description: "Kamu wibu ya bang?"},
+	{title: `🔞 ${pmenus} 𝙽𝚂𝙵𝚆`, rowId: ".? nsfw", description: "Tch, dasar sagne"},
+	{title: `🌟 ${pmenus} 𝙿𝚁𝙴𝙼𝙸𝚄𝙼`, rowId: ".? premium", description: "Only premium Users"},
+	{title: `🎭 ${pmenus} 𝙰𝙽𝙾𝙽𝚈𝙼𝙾𝚄𝚂 Chats`, rowId: ".? anonymous", description: "Bicara dengan orang tidak dikenal"},
+	{title: `📖 ${pmenus} 𝚊𝚕-𝚚𝚞𝚛𝚊𝚗`, rowId: ".? quran", description: "Tobat yuk kak"},
+	{title: `🌎 ${pmenus} 𝙸𝙽𝚃𝙴𝚁𝙽𝙴𝚃`, rowId: ".? internet", description: "Cari sesuatu diBOT"},
+  {title: `🌎 ${pmenus} 𝙱𝙴𝚁𝙸𝚃𝙰`, rowId: ".? berita", description: "Cari berita terupdate"},
+	{title: `📩 ${pmenus} 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁𝚂`, rowId: ".? downloader", description: "Download sesuatu diBOT"},
+	{title: `🎨 ${pmenus} 𝚂𝚃𝙸𝙺𝙴𝚁𝚂`, rowId: ".? stiker", description: "Buat Sticker diBOT"},
+	{title: `✏️ ${pmenus} 𝙽𝚄𝙻𝙸𝚂`, rowId: ".? nulis", description: "Nulis kok males kak?"},
+	{title: `🎧 ${pmenus} 𝙰𝚄𝙳𝙸𝙾`, rowId: ".? audio", description: "Ubah Audio dengan Filter"},
+  {title: `🎧 ${pmenus} 𝚂𝙾𝚄𝙽𝙳 𝙼𝙴𝙽𝚄`, rowId: ".soundmenu", description: "Kumpulan 120 Sound"},
+	{title: `🏢 ${pmenus} 𝙶𝚁𝙾𝚄𝙿`, rowId: ".? group", description: "Only Groups"},
+	{title: `👑 ${pmenus} 𝙰𝙳𝙼𝙸𝙽`, rowId: ".? admin", description: "Only Admin Group"},
+	{title: `🗂️ ${pmenus} 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
+	{title: `🛠️ ${pmenus} 𝚃𝙾𝙾𝙻𝚂`, rowId: ".? tools", description: "Mungkin tools ini bisa membantu?"},
+	{title: `ℹ️ ${pmenus} 𝙸𝙽𝙵𝙾`, rowId: ".? info", description: "Info info BOT"},
+	{title: `👩‍💻 ${pmenus} 𝙾𝚆𝙽𝙴𝚁`, rowId: ".? owner", description: "Owner Only!"},
+	{title: `❓ ${pmenus} 𝙽𝙾 𝙲𝙰𝚃𝙴𝙶𝙾𝚁𝚈`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
 	]
   },
 ]
@@ -498,14 +490,7 @@ const listMessage = {
             fileLength: fsizedoc,
             pageCount: fpagedoc,
             caption: text,
-            footer: titlebot + '\n By Wh-Mods-Dev',
             templateButtons: [
-                {
-                    urlButton: {
-                        displayText: `SUBSCRIBE`,
-                        url: 'https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow'
-                    }
-                },
                 {
                     urlButton: {
                         displayText: 'Group Official',
