@@ -37,19 +37,19 @@ global.sdc = '-' //discord
 global.snh = 'https://www.youtube.com/channel/UCMx4e8anOq_Olt2nMSv0Cow' // my youtube channel
 
 /*============== PAYMENT ==============*/
-global.pdana = '082127487538' //dana
-global.povo = '082127487538' //ovo
-global.pgopay = '082127487538' //gopay
-global.plinkaja = '082127487538' //link aja
-global.ppulsa = '082127487538' //telkomsel
-global.ppulsa2 = '082127487538' // kalau ada kartu lain isi aja
-global.psaweria = 'https://saweria.com/mrw4h1d'
+global.pdana = '-' //dana
+global.povo = '-' //ovo
+global.pgopay = '-' //gopay
+global.plinkaja = '-' //link aja
+global.ppulsa = '083845409710' //telkomsel
+global.ppulsa2 = '085736056578' // kalau ada kartu lain isi aja
+global.psaweria = 'https://saweria.com/kianganz'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '6282159957081'
-global.nomorown = '6282127487538'
-global.namebot = 'WH-MODS-BOT-V1'
-global.nameown = 'WH MODS DEV'
+global.nomorbot = '6285736056578'
+global.nomorown = '6283845409710'
+global.namebot = 'bot'
+global.nameown = 'kian'
 
 /*============== APIKEY SIMPEL ==============*/
 global.zenzkey = 'b8040941f7'
@@ -58,8 +58,8 @@ global.lolkey = '8e66d0934cf741bfd2182c16' // PUNYA WAHID 357d3c85079c4e0818731e
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['99999999999999', '𝗸𝗶𝗮𝗻', true],
-  ['9999999999', '©𝗠𝗼𝗱𝘇𝗯𝗼𝘁𝘇', true] //Ganti jd nomormu sama Namamu
+  ['6283845409710', '𝗸𝗶𝗮𝗻', true],
+  ['6283845409710', '©𝗠𝗼𝗱𝘇𝗯𝗼𝘁𝘇', true] //Ganti jd nomormu sama Namamu
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
