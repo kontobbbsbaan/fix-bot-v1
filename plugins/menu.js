@@ -238,24 +238,27 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	{title: `𝗔𝗟-𝗤𝗨𝗥𝗔𝗡`, rowId: ".? quran", description: "Tobat yuk kak"},
 	{title: `𝗜𝗡𝗧𝗘𝗥𝗡𝗘𝗧`, rowId: ".? internet", description: "Cari sesuatu diBOT"},
   {title: `𝗕𝗘𝗥𝗜𝗧𝗔`, rowId: ".? berita", description: "Cari berita terupdate"},
-	{title: `📩 ${pmenus} 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁𝚂`, rowId: ".? downloader", description: "Download sesuatu diBOT"},
-	{title: `🎨 ${pmenus} 𝚂𝚃𝙸𝙺𝙴𝚁𝚂`, rowId: ".? stiker", description: "Buat Sticker diBOT"},
-	{title: `✏️ ${pmenus} 𝙽𝚄𝙻𝙸𝚂`, rowId: ".? nulis", description: "Nulis kok males kak?"},
-	{title: `🎧 ${pmenus} 𝙰𝚄𝙳𝙸𝙾`, rowId: ".? audio", description: "Ubah Audio dengan Filter"},
-  {title: `🎧 ${pmenus} 𝚂𝙾𝚄𝙽𝙳 𝙼𝙴𝙽𝚄`, rowId: ".soundmenu", description: "Kumpulan 120 Sound"},
-	{title: `🏢 ${pmenus} 𝙶𝚁𝙾𝚄𝙿`, rowId: ".? group", description: "Only Groups"},
-	{title: `👑 ${pmenus} 𝙰𝙳𝙼𝙸𝙽`, rowId: ".? admin", description: "Only Admin Group"},
-	{title: `🗂️ ${pmenus} 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
-	{title: `🛠️ ${pmenus} 𝚃𝙾𝙾𝙻𝚂`, rowId: ".? tools", description: "Mungkin tools ini bisa membantu?"},
-	{title: `ℹ️ ${pmenus} 𝙸𝙽𝙵𝙾`, rowId: ".? info", description: "Info info BOT"},
-	{title: `👩‍💻 ${pmenus} 𝙾𝚆𝙽𝙴𝚁`, rowId: ".? owner", description: "Owner Only!"},
-	{title: `❓ ${pmenus} 𝙽𝙾 𝙲𝙰𝚃𝙴𝙶𝙾𝚁𝚈`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
+	{title: `𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥`, rowId: ".? downloader", description: "Download sesuatu diBOT"},
+	{title: `𝗦𝗧𝗜𝗞𝗘𝗥`, rowId: ".? stiker", description: "Buat Sticker diBOT"},
+	{title: `𝗡𝗨𝗟𝗜𝗦`, rowId: ".? nulis", description: "Nulis kok males kak?"},
+	{title: `𝗔𝗨𝗗𝗜𝗢`, rowId: ".? audio", description: "Ubah Audio dengan Filter"},
+  {title: `𝗦𝗢𝗨𝗡𝗗`, rowId: ".soundmenu", description: "Kumpulan 120 Sound"},
+	{title: `𝗚𝗥𝗢𝗨𝗣`, rowId: ".? group", description: "Only Groups"},
+	{title: `𝗔𝗗𝗠𝗜𝗡`, rowId: ".? admin", description: "Only Admin Group"},
+	{title: `𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
+	{title: `𝗧𝗢𝗢𝗟𝗦`, rowId: ".? tools", description: "Mungkin tools ini bisa membantu?"},
+	{title: `𝗜𝗡𝗙𝗢`, rowId: ".? info", description: "Info info BOT"},
+	{title: `𝗢𝗪𝗡𝗘𝗥`, rowId: ".? owner", description: "Owner Only!"},
+	{title: `𝗡𝗢 𝗖𝗔𝗧𝗘𝗚𝗢𝗥𝗬`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
 	]
   },
 ]
 
 let usrs = db.data.users[m.sender]
-let tek = `*${ucapan()} ${conn.getName(m.sender)}*
+let tek = `\n`
+const listMessage = {
+  text: tek,
+  footer: '*${ucapan()} ${conn.getName(m.sender)}*
 ┌–––––––––––––––––✥
 │「 Hai Kak👋 」
 └┬❖ 「 ${conn.getName(m.sender)} 」
@@ -278,11 +281,7 @@ let tek = `*${ucapan()} ${conn.getName(m.sender)}*
 ┊↬✗• *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
 ┗––––––––––––––––––✥
 ┊↬✗• *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
-${clockStringP(usrs.premiumTime - new Date())}` : ''}
-`
-const listMessage = {
-  text: tek,
-  footer: '📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner',
+${clockStringP(usrs.premiumTime - new Date())}` : ''}',
   mentions: await conn.parseMention(tek),
   title: `${htki} *LIST MENU* ${htka}`,
   buttonText: `CLICK HERE ⎙`, 
