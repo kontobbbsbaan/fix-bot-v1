@@ -9,13 +9,13 @@ let handler = async function (m, { text, usedPrefix, command }) {
 	let namae = conn.getName(m.sender)
 	const sections = [
 	{
-	title: "Select Your Age Here !",
+	title: "Pilih Umur Kamu Sekarang !",
 	rows: [
 	    {title: "Random Years", rowId: '.daftar ' + namae + '.' + pickRandom(['30','29','28','27','26','25','24','23','22','21','20','19','18','17','16','15','14','13','12','11','10','9'])}
 	]
     },
     {
-	title: "O L D",
+	title: "TUA",
 	rows: [
 	    {title: "30 Years", rowId: '.daftar ' + namae + '.30 '},
 	    {title: "29 Years", rowId: '.daftar ' + namae + '.29 '},
@@ -30,7 +30,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 	]
     },
     {
-	title: "Y O U N G",
+	title: "MUDA",
 	rows: [
 	    {title: "20 Years", rowId: '.daftar ' + namae + '.20 '},
 	    {title: "19 Years", rowId: '.daftar ' + namae + '.19 '},
@@ -49,9 +49,8 @@ let handler = async function (m, { text, usedPrefix, command }) {
 ]
 
 const listMessage = {
-  text: `│›Please select your age at the bottom button...`,
-  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\n<❔> Want a costume name? type *${usedPrefix + command} yourname.age*`,
-  title: "▢- - - - - ʀᴇɢɪsᴛᴇʀ - - - - -",
+  text: `Halo Kak Sebelum Menggunakan Bot Daftar Dulu Ya`,
+  footer: `Contoh Manusia.18 Atau Click Dan Pilih Umur Kamu`,
   buttonText: "Click Here !",
   sections
 }
