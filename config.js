@@ -160,8 +160,8 @@ global.drtf = 'text/rtf'
 global.thumbdoc = 'https://telegra.ph/file/385cfe85ba26deda1726d.jpg'
 
 /*=========== FAKE SIZE ===========*/
-global.fsizedoc = '999999999999' // default 10TB
-global.fpagedoc = '999999'
+global.fsizedoc = '99999999999' // default 10TB
+global.fpagedoc = '999999999'
 
 /*=========== HIASAN ===========*/
 // DEFAULT MENU
@@ -174,10 +174,10 @@ global.dmenuf = '╚––––––––––✘' //footer
 global.dashmenu = '┅═┅═❏ *DASHBOARD* ❏═┅═┅'
 global.cmenut = '❏––––––『' //top
 global.cmenuh = '』––––––' //header
-global.cmenub = '┊✦ ' //body
+global.cmenub = '║ ' //body
 global.cmenuf = '┗━═┅═━––––––๑\n' //footer
 global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' //after
-global.pmenus = '✦' //pembatas menu selector
+global.pmenus = 'ও' //pembatas menu selector
 
 global.htki = '––––––『' // Hiasan Titile (KIRI)
 global.htka = '』––––––' // Hiasan Title  (KANAN)
