@@ -70,22 +70,14 @@ const listMessage = {
   user.registered = true
   let sn = createHash('md5').update(m.sender).digest('hex')
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender
-  let cap = `
-
-💬 BERHASIL 
-┏─• *USER*
-│▸ *NAMA:* ${name}
-│▸ *UMUR:* ${age}
-│▸ *SN:* ${sn}
-┗────···\n`
   let buttonMessage= {
 'document':{'url':sgc},
 'mimetype':global.ddocx,
-'fileName':'- - - - - ʀᴇɢɪsᴛᴇʀ - - - - -',
+'fileName':'- - - - - REGISTER BERHASIL - - - - -',
 'fileLength':fsizedoc,
 'pageCount':fpagedoc,
 'contextInfo':{
-'forwardingScore':555,
+'forwardingScore':1,
 'isForwarded':true,
 'externalAdReply':{
 'mediaUrl':global.sig,
@@ -96,10 +88,14 @@ const listMessage = {
 'thumbnail':await(await fetch('https://telegra.ph/file/385cfe85ba26deda1726d.jpg')).buffer(),
 'sourceUrl':sgc}},
 'caption':cap,
-'footer':botdate,
+'footer':'
+┏─• *USER*
+│▸ *NAMA:* ${name}
+│▸ *UMUR:* ${age}
+│▸ *SN:* ${sn}
+┗────···',
 'buttons':[
-{'buttonId':'.menu','buttonText':{'displayText':'ᴍᴇɴᴜ'},'type':1},
-{'buttonId':'.donasi','buttonText':{'displayText':'ᴅᴏɴᴀsɪ'},'type':1}
+{'buttonId':'.menu','buttonText':{'displayText':'MENU'},'type':1},
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
