@@ -51,7 +51,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 const listMessage = {
   text: `Halo Kak Sebelum Menggunakan Bot Daftar Dulu Ya`,
   footer: `Contoh Manusia.18 Atau Click Dan Pilih Umur Kamu`,
-  buttonText: "Click Here !",
+  buttonText: "Click disini !",
   sections
 }
 
@@ -71,15 +71,13 @@ const listMessage = {
   let sn = createHash('md5').update(m.sender).digest('hex')
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender
   let cap = `
-┏─• *ᴜsᴇʀs*
-│▸ *sᴛᴀᴛᴜs:* ☑️ sᴜᴄᴄᴇssғᴜʟ
-│▸ *ɴᴀᴍᴇ:* ${name}
-│▸ *ᴀɢᴇ:* ${age} ʏᴇᴀʀs
-│▸ *sɴ:* ${sn}
-┗────···
 
-ᴅᴀᴛᴀ ᴜsᴇʀ ʏᴀɴɢ ᴛᴇʀsɪᴍᴘᴀɴ ᴅɪᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ, ᴅɪᴊᴀᴍɪɴ ᴀᴍᴀɴ ᴛᴀɴᴘᴀ ᴛᴇʀsʜᴀʀᴇ (. ❛ ᴗ ❛.)
-`
+💬 BERHASIL 
+┏─• *USER*
+│▸ *NAMA:* ${name}
+│▸ *UMUR:* ${age}
+│▸ *SN:* ${sn}
+┗────···\n`
   let buttonMessage= {
 'document':{'url':sgc},
 'mimetype':global.ddocx,
